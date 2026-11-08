@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0876d9">
+  <meta name="description" content="Explore Bangladesh with TravelGo. Discover beaches, hills, forests, wetlands, islands and heritage destinations.">
+  <title>TravelGo — Explore Beautiful Bangladesh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Kaushan+Script&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-glow"></div>
+  <nav class="nav glass" aria-label="Main navigation">
+    <a class="brand" href="index.html"><span class="brand-mark">✈</span><span>Travel<span>Go</span><small>BANGLADESH</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a class="active" href="index.html">Home</a><a href="#destinations">Destinations</a><a href="#experience">Experience</a><a href="#travel-tips">Travel Tips</a>
+      <a class="nav-cta" href="#destinations">Plan a Trip <span>↗</span></a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-photo"></div><div class="hero-shade"></div>
+    <div class="hero-content">
+      <div class="eyebrow"><span></span> YOUR NEXT JOURNEY STARTS HERE</div>
+      <h1>Explore <em>The World</em><br><span class="hero-country">Beautiful Bangladesh</span></h1>
+      <p>From endless beaches to green hill escapes — discover the places, stories and experiences that make Bangladesh unforgettable.</p>
+      <div class="hero-actions"><a class="btn btn-yellow" href="#destinations">Explore destinations <b>↗</b></a><a class="text-link" href="#experience">Discover the experience <span>→</span></a></div>
+      <div class="hero-stats"><div><strong>31</strong><span>Destinations</span></div><i></i><div><strong>6+</strong><span>Travel categories</span></div><i></i><div><strong>1</strong><span>Beautiful Bangladesh</span></div></div>
+    </div>
+    <div class="hero-note glass"><span class="note-icon">✦</span><div><b>Find your own beautiful</b><small>Travel • Discover • Experience</small></div></div>
+    <div class="hero-scroll">SCROLL TO EXPLORE <span>↓</span></div>
+  </header>
+
+  <main>
+    <section class="intro section-shell" id="experience">
+      <div><span class="section-kicker">A COUNTRY OF MANY STORIES</span><h2>Small country.<br><em>Endless wonders.</em></h2></div>
+      <p>Follow the coastline, wander through green hills, glide across quiet wetlands and step into centuries of history. Your Bangladesh journey begins with a place that speaks to you.</p>
+    </section>
+
+    <section class="destinations section-shell" id="destinations">
+      <div class="section-heading"><div><span class="section-kicker">FIND YOUR NEXT ESCAPE</span><h2>Explore <em>destinations</em></h2><p>Choose a place. Find a feeling. Make a memory.</p></div><span class="destination-total"><b id="totalCount">31</b><small>PLACES TO EXPLORE</small></span></div>
+      <div class="search-panel glass">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search destination, district or division..." autocomplete="off"><kbd>⌘ K</kbd></label>
+        <label class="sort-wrap"><span>Sort by</span><select id="sortSelect" aria-label="Sort destinations"><option value="featured">Featured</option><option value="az">Name A–Z</option></select></label>
+      </div>
+      <div class="filter-row" id="filterRow" aria-label="Filter by destination category"></div>
+      <div class="results-line"><span id="resultsText">Showing all 31 destinations</span><button id="clearFilters" class="clear-btn" type="button">Clear filters ↗</button></div>
+      <div class="destination-grid" id="destinationGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No destinations found</h3><p>Try a different search or category.</p></div>
+    </section>
+
+    <section class="experience-banner section-shell">
+      <div class="experience-image"></div><div class="experience-overlay"></div>
+      <div class="experience-content"><span class="section-kicker">THE BEAUTY IS IN THE JOURNEY</span><h2>Travel more.<br><em>Live better.</em></h2><p>Collect moments, not just miles. Let Bangladesh surprise you.</p><a class="btn btn-yellow" href="#destinations">Start exploring <b>↗</b></a></div>
+      <div class="banner-stamp">DISCOVER<br><strong>BD</strong><small>WITH TRAVELGO</small></div>
+    </section>
+
+    <section class="tips section-shell" id="travel-tips">
+      <div class="section-heading"><div><span class="section-kicker">A LITTLE PREPARATION GOES A LONG WAY</span><h2>Travel <em>thoughtfully</em></h2></div></div>
+      <div class="tip-grid">
+        <article class="tip-card"><span>☀</span><h3>Check before you go</h3><p>Verify weather, transport schedules, accommodation availability, local rules and current travel advisories.</p></article>
+        <article class="tip-card"><span>⌁</span><h3>Respect local guidance</h3><p>For remote hill or forest destinations, use reliable local guides where appropriate and avoid unapproved routes.</p></article>
+        <article class="tip-card"><span>♡</span><h3>Leave only footprints</h3><p>Respect local communities and cultural sites. Avoid littering and never disturb wildlife.</p></article>
+      </div>
+      <p class="disclaimer">Travel information is a general starting point. Access, permits, transport, opening hours and safety guidance can change. Always verify current local information before traveling.</p>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-main"><a class="brand footer-brand" href="index.html"><span class="brand-mark">✈</span><span>Travel<span>Go</span><small>BANGLADESH</small></span></a><p>Explore the beauty. Discover the stories.<br>Experience Bangladesh.</p><a class="back-top" href="#">Back to top ↑</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> TravelGo Bangladesh</span><span>Made for curious travellers.</span><span>Home · Destinations · Travel Tips</span></div>
+  </footer>
+  <script src="data.js"></script><script src="app.js"></script>
+</body></html>
